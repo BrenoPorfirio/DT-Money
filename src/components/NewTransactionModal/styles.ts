@@ -68,3 +68,13 @@ export const CloseButton = styled(Dialog.Close)`
     cursor: pointer;
     color: ${(props) => props.theme['gray-500']};
 `;
+
+export const TransactionType = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+`
+
+
+

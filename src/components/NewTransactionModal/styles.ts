@@ -93,7 +93,7 @@ export const TransactionTypeButton = styled.button<TransactionTypeButtonProps>`
     color: ${(props) => props.theme['gray-300']};
 
     svg {
-        color: ${(props) => props.variant === 'income' ? props.theme['gray-300'] : props.theme['red-300']};
+        color: ${(props) => props.variant === 'income' ? props.theme['green-300'] : props.theme['red-300']};
     }
 `;
 

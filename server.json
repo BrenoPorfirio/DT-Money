@@ -1,19 +1,21 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "transactions": [
+      {
+          "id": 1,
+          "description": "Desenvolvimento de site",
+          "type": "income",
+          "category": "Venda",
+          "price": "14000",
+          "createdAT": "2023-11-04T22:19:49.332Z"
+      },
+      {
+          "id": 2,
+          "description": "Hamburguer",
+          "type": "outcome",
+          "category": "Alimentação",
+          "price": "20",
+          "createdAT": "2023-11-04T22:29:49.332Z"
+      }
+  ]
 }
+

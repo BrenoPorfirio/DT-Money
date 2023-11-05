@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Header } from "../../components/Header";
 import { Sumarry } from "../../components/Sumarry";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
+import { TransactionsContext } from "../../contexts/TransactionsContext";
 
 export function Transactions() {
+    const { transactions } = useContext(TransactionsContext);
+
     return (
         <div>
             <Header />

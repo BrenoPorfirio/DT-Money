@@ -20,7 +20,7 @@ export function Sumarry() {
         {
             income: 0,
             outcome: 0,
-            total: 0,
+            total: 0
         }
     )
 

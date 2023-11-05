@@ -4,15 +4,6 @@ import { Sumarry } from "../../components/Sumarry";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
 
-interface Transaction {
-    id: number;
-    description: string;
-    type: 'income' | 'outcome';
-    price: number;
-    category: string;
-    createdAt: string;
-}
-
 export function Transactions() {
     const [transactions, setTransactions] = useState<Transaction[]>([])
 

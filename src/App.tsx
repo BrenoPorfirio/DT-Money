@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/theme/default";
 import { GlobalStyle } from "./styles/global";
 import { Transactions } from "./pages/Transactions";
-import { TransactionProvider } from "./contexts/transactionsContext";
+import { TransactionProvider } from "./contexts/TransactionsContext";
 
 export function App() {
   return (

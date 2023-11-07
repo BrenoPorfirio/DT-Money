@@ -28,7 +28,7 @@ export function Transactions() {
                                         </PriceHighlight>
                                     </td>
                                     <td>{transaction.category}</td>
-                                    <td>{transaction.createdAt}</td>
+                                    <td>{transaction.createdAT}</td>
                                 </tr>
                             )
                         })}

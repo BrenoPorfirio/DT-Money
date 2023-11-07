@@ -4,7 +4,7 @@ import { Sumarry } from "../../components/Sumarry";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
-import { priceFormatter } from "../../utils/formatter";
+import { dateFormatter, priceFormatter } from "../../utils/formatter";
 
 export function Transactions() {
     const { transactions } = useContext(TransactionsContext);
@@ -28,7 +28,7 @@ export function Transactions() {
                                         </PriceHighlight>
                                     </td>
                                     <td>{transaction.category}</td>
-                                    <td>{transaction.createdAT}</td>
+                                    <td>{dateFormatter.format(new Date(transaction.createdAT))}</td>
                                 </tr>
                             )
                         })}

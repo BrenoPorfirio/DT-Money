@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Header } from "../../components/Header";
-import { Sumarry } from "../../components/Sumarry";
+import { Summary } from "../../components/Summary"
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
@@ -12,7 +12,7 @@ export function Transactions() {
     return (
         <div>
             <Header />
-            <Sumarry />
+            <Summary />
             <TransactionsContainer>
                 <SearchForm />
                 <TransactionsTable>

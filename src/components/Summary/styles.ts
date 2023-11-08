@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const SumarryContainer = styled.div`
+export const SummaryContainer = styled.div`
     width: 100%;
     max-width: 1120px;
     margin: 0 auto;
@@ -13,11 +13,11 @@ export const SumarryContainer = styled.div`
     margin-top: -5rem;
 `
 
-interface SumarryCardProps {
+interface SummaryCardProps {
     variant?: 'green';
 }
 
-export const SumarryCard = styled.div<SumarryCardProps>`
+export const SummaryCard = styled.div<SummaryCardProps>`
     background: ${(props) => props.theme['gray-600']};
     border-radius: 6px;
     padding: 2rem;

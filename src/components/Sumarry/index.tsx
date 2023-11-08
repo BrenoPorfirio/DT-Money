@@ -1,29 +1,10 @@
-import { useContext } from "react";
 import { SumarryCard, SumarryContainer } from "./styles";
 import { ArrowCircleUp, ArrowCircleDown, CurrencyDollar } from "phosphor-react";
-import { TransactionsContext } from "../../contexts/TransactionsContext";
 import { priceFormatter } from "../../utils/formatter";
+import { useSummary } from "../../hooks/useSumarry";
 
 export function Sumarry() {
-    const { transactions } = useContext(TransactionsContext);
-    
-    const sumarry = transactions.reduce(
-        (acc, transaction) => {
-            if(transaction.type === "income") {
-                acc.income += transaction.price
-                acc.total += transaction.price
-            } else {
-                acc.outcome += transaction.price
-                acc.total -= transaction.price
-            }
-            return acc;
-        },
-        {
-            income: 0,
-            outcome: 0,
-            total: 0
-        }
-    )
+    const summary = useSummary();
 
     return (
         <SumarryContainer>
@@ -32,7 +13,7 @@ export function Sumarry() {
                     <span>Entradas</span>
                     <ArrowCircleUp size={32} color="#00B37E"/>
                 </header>
-                <strong>{priceFormatter.format(sumarry.income)}</strong>
+                <strong>{priceFormatter.format(summary.income)}</strong>
             </SumarryCard>
 
             <SumarryCard>
@@ -40,7 +21,7 @@ export function Sumarry() {
                     <span>Saídas</span>
                     <ArrowCircleDown size={32} color="#F75A68"/>
                 </header>
-                <strong>{priceFormatter.format(sumarry.outcome)}</strong>
+                <strong>{priceFormatter.format(summary.outcome)}</strong>
             </SumarryCard>
 
             <SumarryCard variant="green">
@@ -48,7 +29,7 @@ export function Sumarry() {
                     <span>Total</span>
                     <CurrencyDollar size={32} color="#FFF"/>
                 </header>
-                <strong>{priceFormatter.format(sumarry.total)}</strong>
+                <strong>{priceFormatter.format(summary.total)}</strong>
             </SumarryCard>
         </SumarryContainer>
     )

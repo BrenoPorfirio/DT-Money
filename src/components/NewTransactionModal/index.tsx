@@ -29,14 +29,14 @@ export function NewTransactionModal() {
 
     async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
         const { description, category, price, type } = data;
-
-        await api.post('transactions', {
+        const response = await api.post('transactions', {
             description,
             category,
             price,
             type,
             createdAT: new Date(),
         })
+        console.log(response);
         reset();
     }
 

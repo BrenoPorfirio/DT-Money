@@ -22,7 +22,7 @@ export const TransactionsContext = createContext({} as TransactionContextType);
 export function TransactionProvider({ children }: TransactionsProviderProps) {
     const [transactions, setTransactions] = useState<Transaction[]>([])
 
-    async function loadTransactions() {
+    async function fetchTransactions() {
             const response = await fetch('http://localhost:3333/transactions')
             const data = await response.json();
 
@@ -30,7 +30,7 @@ export function TransactionProvider({ children }: TransactionsProviderProps) {
         }
 
     useEffect(() => {
-        loadTransactions();
+        fetchTransactions();
     }, [])
 
     

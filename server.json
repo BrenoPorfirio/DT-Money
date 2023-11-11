@@ -31,6 +31,14 @@
       "type": "income",
       "createdAT": "2023-11-11T01:44:05.212Z",
       "id": 4
+    },
+    {
+      "description": "Pastel",
+      "category": "Alimentação",
+      "price": 3,
+      "type": "outcome",
+      "createdAT": "2023-11-11T02:08:16.759Z",
+      "id": 5
     }
   ]
 }

@@ -27,6 +27,8 @@ export function TransactionProvider({ children }: TransactionsProviderProps) {
     async function fetchTransactions(query?: string) {
         const response = await api.get('transactions', {
             params: {
+                _sort: 'createdAT', 
+                _order: 'desc',
                 q: query,
             }
         })

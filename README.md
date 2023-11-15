@@ -30,4 +30,34 @@ O DT-Money é um programa que se assemelha a uma carteira digital que permite vo
 
 ## :memo: Execução
 
-Siga os seguintes passos para execução
+Siga abaixo os seguinte passos para execução do código:
+
+1. Clone o repositório utilizando:
+
+```bash
+  git clone https://github.com/BrenoPorfirio/DT-Money.git
+```
+
+2. Agora, vá para o diretório na sua IDE utilizando:
+
+```bash
+  cd DT-Money
+```
+
+3. Instale todas as dependências necessárias utilizando:
+
+```bash
+  npm install 
+```
+
+4. É necessário que seja iniciado o server para uso do programa, então:
+
+```bash
+  npm run dev:server
+```
+
+5. Agora, basta executar o comando para rodar o projeto:
+
+```bash
+  npm run dev
+```

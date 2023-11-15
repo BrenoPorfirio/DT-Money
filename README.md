@@ -12,7 +12,7 @@ Programa exclusivo promovido pela Rocketseat para ensino de tecnologias WEB.
 
 <br>
 <p align="center">
-  <img alt="DT-Money" src="" width="100%">
+  <img alt="DT-Money" src="https://github.com/BrenoPorfirio/DT-Money/assets/112186428/6ec9190e-ac07-4a66-aa6e-caf2cff3b64b)" width="100%">
 </p>
 
 ## 🚀 Tecnologias
